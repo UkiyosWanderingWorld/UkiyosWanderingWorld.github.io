@@ -19,6 +19,5 @@ Gemfile.lock
 
 # other stuff dont include bad
 node_modules
-out
 .next
 .DS_Store
