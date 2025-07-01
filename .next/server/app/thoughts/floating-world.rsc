@@ -1,5 +1,5 @@
-1:HL["/UkiyosWanderingWorld.github.io/_next/static/css/14f1704d231f281d.css","style",{"crossOrigin":""}]
-0:["0zHtUxjDgrlY2qtczdw16",[[["",{"children":["thoughts",{"children":[["slug","floating-world","d"],{"children":["__PAGE__?{\"slug\":\"floating-world\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/UkiyosWanderingWorld.github.io/_next/static/css/14f1704d231f281d.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/_next/static/css/14f1704d231f281d.css","style",{"crossOrigin":""}]
+0:["R2kKkvofl0rpEYiGZIjD9",[[["",{"children":["thoughts",{"children":[["slug","floating-world","d"],{"children":["__PAGE__?{\"slug\":\"floating-world\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/14f1704d231f281d.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[5827,["185","static/chunks/app/layout-6786d034e6cf29e2.js"],""]
 5:I[6954,[],""]
 6:I[7264,[],""]

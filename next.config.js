@@ -5,11 +5,12 @@ const withMDX = require('@next/mdx')({
 /** @type {import('next').nextConfig} */
 const nextConfig = {
   output: 'export',
-  trailingSlash: true,
-  basePath: '/ukiyoswanderingworld',
-  assetPrefix: '/ukiyoswanderingworld',
+  distDir: 'dist',
   images: {
     unoptimized: true,
+  },
+  experimental: {
+    webpackBuildWorker: true,
   },
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
 };
