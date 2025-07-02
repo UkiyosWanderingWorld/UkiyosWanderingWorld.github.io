@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 
 export default function AboutPage() {
   return (
-    <main className="pt-20 px-4 mx-auto bg-gray-100 text-gray-800 font-mono">
+    <main className="pt-20 px-4 mx-auto bg-gray-100 text-gray-800">
       <section className="max-w-6xl mx-auto px-4 pt-24 grid gap-5 grid-cols-1">
         <h1 className="text-2xl font-light mb-4">me</h1>
         <p className="text-md leading-relaxed">

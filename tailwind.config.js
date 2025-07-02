@@ -6,7 +6,11 @@ module.exports = {
         sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
         mono: ['Menlo', 'Monaco', 'Courier New', 'monospace'],
       },
+      spacing: {
+        28: '7rem',
+        32: '8rem',
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require('@tailwindcss/typography')],
+};
