@@ -1,7 +1,8 @@
 export type PostMeta = {
   title?: string;
   date?: string;
-  description?: string;
+  excerpt?: string;
+  thumbnail?: string;
   [key: string]: any;
 };
 
