@@ -27,20 +27,21 @@ export default function Nav() {
    <header className={`fixed top-0 left-0 w-full bg-gray-50 text-xl font-mono px-4 py-2 z-50 transition-transform duration-300 ${
     hidden ? '-translate-y-full' : 'translate-y-0'
    }`}>
-      <div className="max-w-6xl mx-auto flex px-4 py-4 justify-between items-center">
-        <a href="/">Ukiyo</a>
+      <div className="max-w-6xl mx-auto flex px-4 py-4 items-center justify-between md:justify-between">
+        <a href="/" className="order-2">Ukiyo</a>
         <button
-          className="md:hidden"
+          className="md:hidden order-1"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
           ☰
         </button>
         <nav 
-          className={`${
-            menuOpen ? 'block' : 'hidden'
-          } absolute top-full left-0 w-full bg-gray-50 px-4 py-2 md:static md:flex flex-col space-y-1 md:w-auto md:p-0 group`}
-        >
+          className={`
+            transition-all duration-300 ease-in-out overflow-hidden
+            absolute top-full left-0 w-full bg-gray-50 px-4 py-2 md:static md:flex flex-col space-y-1 md:w-auto md:p-0 group
+            ${menuOpen ? 'max-h-40 py-2' : 'max-h-0 py-0'} 
+        `}>
           {[
             ['thoughts', '/thoughts'],
             ['about', '/about'],

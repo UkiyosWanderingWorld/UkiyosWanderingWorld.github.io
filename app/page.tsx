@@ -9,7 +9,6 @@ export default function HomePage() {
       key={post.slug}
       className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start"
     >
-      {/* IMAGE BLOCK */}
       <div
         className={`
           md:col-span-6 
@@ -23,8 +22,6 @@ export default function HomePage() {
           className="w-full h-auto rounded-lg object-cover aspect-[3/2] opacity-80 hover:opacity-100 transition-opacity duration-500 "
         />
       </div>
-
-      {/* TEXT BLOCK */}
       <div
         className={`
           md:col-span-6 flex flex-col justify-between 
