@@ -15,12 +15,17 @@ export default function HomePage() {
           ${i % 2 === 0 ? 'order-1' : 'md:order-2'}
         `}
       >
+        <a
+          href={`/thoughts/${post.slug}`}
+          className="block group relative"
+        >
         <img
           src={post.frontmatter.thumbnail || '/images/placeholder.jpg'}
           alt={post.frontmatter.title}
           loading="lazy"
           className="w-full h-auto rounded-lg object-cover aspect-[3/2] opacity-80 hover:opacity-100 transition-opacity duration-500 "
         />
+        </a>
       </div>
       <div
         className={`
@@ -31,15 +36,19 @@ export default function HomePage() {
         <div className="text-xs text-gray-500 uppercase tracking-wide mb-2">
           {post.frontmatter.date || '—'}
         </div>
-        <a href={`/thoughts/${post.slug}`} className="block group">
-          <h2 className="text-2xl font-light leading-tight">
+        <a
+          href={`/thoughts/${post.slug}`}
+          className="block group relative"
+        >
+          <h2 className="text-2xl font-light leading-tight flex items-center gap-2">
             {post.frontmatter.title}
+            <span
+              className="opacity-0 translate-x-[-4px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+              aria-hidden="true"
+            >
+              →
+            </span>
           </h2>
-          {post.frontmatter.excerpt && (
-            <p className="text-sm text-gray-600 mt-4 leading-relaxed">
-              {post.frontmatter.excerpt}
-            </p>
-          )}
         </a>
       </div>
     </div>
@@ -47,3 +56,4 @@ export default function HomePage() {
 </main>
   );
 }
+

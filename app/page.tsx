@@ -1,16 +1,5 @@
 import { getAllPosts} from '@/lib/posts';
-/*
-        <a href={`/thoughts/${post.slug}`} className="block group">
-          <h2 className="text-2xl font-light leading-tight">
-            {post.frontmatter.title}
-          </h2>
-          {post.frontmatter.excerpt && (
-            <p className="text-sm text-gray-600 mt-4 leading-relaxed">
-              {post.frontmatter.excerpt}
-            </p>
-          )}
-        </a>
-*/
+
 export default function HomePage() {
   const posts = getAllPosts();
   return (
