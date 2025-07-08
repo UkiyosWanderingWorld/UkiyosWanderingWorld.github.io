@@ -3,6 +3,7 @@ export type PostMeta = {
   date?: string;
   excerpt?: string;
   thumbnail?: string;
+  heroImage?: string;
   [key: string]: any;
 };
 
