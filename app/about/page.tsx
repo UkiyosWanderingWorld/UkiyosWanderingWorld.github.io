@@ -40,8 +40,8 @@ export default function AboutPage() {
         </p>
 
         <p className="text-sm mt-4 leading-relaxed text-gray-500">
-          im a cool guy. if u like this c  o  n  t  e  n  t  then plz
-          buy me a cofvve
+          if you like anything u see here, feel free to buy me a coffee. it'll
+          fuel more of the same, perhaps.
         </p>
       </section>
     </main>
