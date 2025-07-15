@@ -1,6 +1,7 @@
 export type PostMeta = {
   title?: string;
   date?: string;
+  postNumber?: string;
   excerpt?: string;
   thumbnail?: string;
   heroImage?: string;
