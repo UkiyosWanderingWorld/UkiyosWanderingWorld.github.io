@@ -38,6 +38,6 @@ export function getPostBySlug(slug: string) : Post {
 export function getAllPosts() : Post[] {
   return getPostSlugs()
     .map(slug => getPostBySlug(slug))
-    .sort((a, b) => (a.frontmatter.postNumber < b.frontmatter.postNumber ? 1 : -1));
+    .sort((a, b) => (a.frontmatter.id < b.frontmatter.id ? 1 : -1));
 }
 
