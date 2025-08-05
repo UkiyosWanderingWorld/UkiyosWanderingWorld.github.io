@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 
@@ -43,6 +44,13 @@ export default function AboutPage() {
           if you like anything u see here, feel free to buy me a coffee. it'll
           fuel more of the same, perhaps.
         </p>
+        <a href="https://www.buymeacoffee.com/UkiyosWorld" >
+        <img 
+            src="/images/default-red.png" 
+            loading="lazy" 
+            alt="Buy Me A Coffee" 
+            className="w-40 h-auto"/>
+        </a>
       </section>
     </main>
   );
