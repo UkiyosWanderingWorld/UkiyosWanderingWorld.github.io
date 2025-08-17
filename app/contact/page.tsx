@@ -39,18 +39,18 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="pt-20 bg-gray-100 text-gray-800 min-h-screen">
-      <section className="max-w-3xl mx-auto px-4 pt-24">
-        <div className="mb-8">
-          <h1 className="text-2xl font-light mb-4">msg me</h1>
-          <p className="text-md leading-relaxed mb-2">
+    <div className="bg-gray-100 text-gray-800 h-full flex items-center justify-center pt-24">
+      <section className="max-w-3xl mx-auto px-4 w-full -mt-8">
+        <div className="mb-6">
+          <h1 className="text-2xl font-light mb-2">msg me</h1>
+          <p className="text-md leading-relaxed">
             no spam plz :-)
           </p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Name
@@ -62,7 +62,7 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
                   placeholder="Your name"
                 />
               </div>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
                   placeholder="your@email.com"
                 />
               </div>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
                 placeholder="What's this about?"
               />
             </div>
@@ -110,8 +110,8 @@ export default function ContactPage() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows={6}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white resize-vertical"
+                rows={4}
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white resize-vertical"
                 placeholder="Say hello, share a thought, or ask a question..."
               />
             </div>
@@ -148,6 +148,6 @@ export default function ContactPage() {
           )}
         </div>
       </section>
-    </main>
+    </div>
   )
 }
