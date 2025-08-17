@@ -19,17 +19,26 @@ export default function ContactPage() {
       [e.target.name]: e.target.value
     })
   }
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission - replace with your actual form handler
     try {
-      // You can integrate with services like Formspree, Netlify Forms, or your own API
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', subject: '', message: '' })
+      const response = await fetch(`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        setSubmitStatus('error')
+      }
     } catch (error) {
       setSubmitStatus('error')
     }
